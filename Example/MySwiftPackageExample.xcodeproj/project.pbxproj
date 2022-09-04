@@ -17,6 +17,7 @@
 		43801D8428C4D571001C2048 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43801D5A28C4D56F001C2048 /* ContentView.swift */; };
 		43801D8528C4D571001C2048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43801D5B28C4D571001C2048 /* Assets.xcassets */; };
 		43801D8628C4D571001C2048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43801D5B28C4D571001C2048 /* Assets.xcassets */; };
+		43B8B85428C52616004C7925 /* MySwiftPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 43B8B85328C52616004C7925 /* MySwiftPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B8B85428C52616004C7925 /* MySwiftPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +159,9 @@
 			dependencies = (
 			);
 			name = "MySwiftPackageExample (iOS)";
+			packageProductDependencies = (
+				43B8B85328C52616004C7925 /* MySwiftPackage */,
+			);
 			productName = "MySwiftPackageExample (iOS)";
 			productReference = 43801D6028C4D571001C2048 /* MySwiftPackageExample.app */;
 			productType = "com.apple.product-type.application";
@@ -249,6 +254,9 @@
 				Base,
 			);
 			mainGroup = 43801D5328C4D56F001C2048;
+			packageReferences = (
+				43B8B85228C52616004C7925 /* XCRemoteSwiftPackageReference "MySwiftPackage" */,
+			);
 			productRefGroup = 43801D6128C4D571001C2048 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -701,6 +709,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43B8B85228C52616004C7925 /* XCRemoteSwiftPackageReference "MySwiftPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/StudioKaori/MySwiftPackage";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43B8B85328C52616004C7925 /* MySwiftPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43B8B85228C52616004C7925 /* XCRemoteSwiftPackageReference "MySwiftPackage" */;
+			productName = MySwiftPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43801D5428C4D56F001C2048 /* Project object */;
 }
