@@ -21,7 +21,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "MySwiftPackage",
-            dependencies: ["Starscream"]),
+            dependencies: ["Starscream"],
+            path: "sources"), // target folder path you want to add the dependencies
         .testTarget(
             name: "MySwiftPackageTests",
             dependencies: ["MySwiftPackage"]),
