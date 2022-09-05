@@ -16,7 +16,8 @@ public struct SwiftUIView: View {
         // Use UIImage to look for the image inside of the package
         // UIImage needs to be unwrap with !
         Image(uiImage: UIImage(named: "starscream", in: .module, with: nil)!)
-            .scaledToFit()
-            .padding()
+            .resizable()
+            .frame(width: 100, height: 100, alignment: .center)
+            .aspectRatio(contentMode: .fit)
     }
 }
