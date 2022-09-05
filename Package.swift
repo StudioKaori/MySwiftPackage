@@ -22,7 +22,10 @@ let package = Package(
         .target(
             name: "MySwiftPackage",
             dependencies: ["Starscream"],
-            path: "sources"), // target folder path you want to add the dependencies
+            path: "sources",
+            resources: [
+                .process("Resources/Media.xcassets")
+            ]), // target folder path you want to add the dependencies
         .testTarget(
             name: "MySwiftPackageTests",
             dependencies: ["MySwiftPackage"]),
